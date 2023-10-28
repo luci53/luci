@@ -125,11 +125,8 @@ li {
 
 }
 
-/* input {
-    display: none;
-} */
 
-/* label {
+ label {
     border-radius: 6px;
     border: 2px dashed #999;
     height: 25px;
@@ -139,7 +136,7 @@ li {
 label:hover {
     color: #de0611;
     border: 1px dashed #de0611;
-} */
+} 
 
 /* about us css */
 
@@ -159,7 +156,7 @@ label:hover{
 }
 
 body {
-    background-color: #333; /* Background color for the entire page */
+    background-color: #333; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,4 +223,3 @@ input[type="submit"] {
 .loginForm:hover{
     outline: 10px solid #ffff00;
 }
-
