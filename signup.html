@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Selling website</title>
+    <link rel="stylesheet" href=C:\Users\Hp\project\nftsite\main.css>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        font-family: sans-serif;
+    }
+
+    body {
+        background-image: url("C:/Users/Hp/project/nftsite/images/background2.png");
+        /* background-size: cover; */
+        /* background-image: url("C:/Users/Hp/project/nftsite/images/three.png"),url("C:/Users/Hp/project/nftsite/images/arrow.jpg"); */
+        /* background-repeat: no-repeat, no-repeat; */
+        /* background-position: left bottom,left top; */
+        /* background-position:170px 330px,40px 120px; */
+    }
+
+    .signup {
+        width:40%;
+        margin: 50px 0px 0px 370px;
+        background-color: rgb(242, 242, 242);
+        padding: 20px 0px 20px 50px;
+        border-radius: 1px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        border: 4px solid black;
+        zoom: 1.2;
+        justify-content: center;
+    }
+
+    .signup #line {
+        margin-bottom: 20px;
+    }
+
+
+    .signup #line h1 {
+        font-size: 26px;
+    }
+
+    .signup #line div.underline {
+        width: 33px;
+        height: 4px;
+        margin-top: 3px;
+        background-color: rgb(232, 70, 0);
+        transition: 0.3s;
+    }
+
+    .signup #line:hover div.underline {
+        width: 108px;
+    }
+
+    .signup section {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 15px;
+
+    }
+
+    .signup section:not(.lastsection) div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup section:not(.lastsection) div {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .signup section:not(.lastsection) input {
+        margin-top: 5px;
+        padding: 10px 13px;
+        border-radius: 5px;
+
+    }
+
+    .signup h2 {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .signup input[type="submit"] {
+        margin-left: 120px;
+        width: 40%;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(37, 37, 37);
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+    }
+</style>
+
+<body>
+    <header style="border-bottom: 2px solid rgb(0, 0, 0);">
+        <a href="C:\Users\Hp\project\nftsite\main.html" id="logo">NFT<span>.DEALERS</span></a>
+        <nav>
+            <ul>
+                <li><a class="navbar" href="project\nftsite\index.html">Home</a></li>
+                <li><a class="navbar" href="project\nftsite\signup.html">Sign up!</a></li>
+                <li><a class="navbar" href="project\nftsite\buy.html">Buy</a></li>
+                <li><a class="navbar" href="project\nftsite\sell.html">Sell</a></li>
+                <li><a class="navbar" href="project\nftsite\about.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="signup">
+        <div>
+            <form action="nftsite/connect.php" method="post">
+            <div id="line">
+                <h1>Sign Up</h1>
+                <div class="underline"></div>
+            </div>
+            <!-- <form action="nftsite/connect.php" method="post"> -->
+            <section>
+                <div>
+                    <label for="fullname">Fullname</label>
+                    <input type="text" id="fullname" placeholder="Enter your name" name="fullname">
+                </div>
+                <div>
+                    <label for="username">User name</label>
+                    <input type="text" id="User Name" placeholder="Enter your username" name="username">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="Email" placeholder="Enter your email" name="email">
+                </div>
+                <div>
+                    <label for="phonenumber">Phone number</label>
+                    <input type="text" id="phone number" placeholder="Enter your phone number" name="phonenumber">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" name="password">
+                </div>
+                <div>
+                    <label for="confirmpassword">Confirm password</label>
+                    <input type="password" id="cofirm password" placeholder="confirm your password" name="confirmpassword">
+                </div>
+            </section>
+        </div>
+        <h2>Gender</h2>
+        <section class="lastsection">
+            <div>
+                <input name=">>" type="radio" id="male" name="gender" value="m">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input name=">>" type="radio" id="Female" name="gender" value="f">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <input name=">>" type="radio" id="neutral" name="gender" value="n">
+                <label for="neutral">Prefer not to answer</label>
+            </div>
+        </section>
+        <section>
+            <a href="C:\Users\Hp\project\nftsite\signin.html">Already have an account?</a>
+        </section>
+        <input type="submit" value="Register">
+    </form>
+    </div>
+
+
+
+</body>
+
+</html>

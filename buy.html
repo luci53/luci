@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Selling website</title>
+    <link rel="stylesheet" href=C:\Users\Hp\project\nftsite\main.css>
+    
+</head>
+
+<body>
+    <header>
+        <a href="C:\Users\Hp\project\nftsite\main.html" id="logo">NFT<span>.DEALERS</span></a>
+        <nav>
+            <ul>
+                <li><a class="navbar" href="project\nftsite\index.html">Home</a></li>
+                <li><a class="navbar" href="project\nftsite\login.html">Login!</a></li>
+                <li><a class="navbar" href="project\nftsite\buy.html">Buy</a></li>
+                <li><a class="navbar" href="project\nftsite\sell.html">Sell</a></li>
+                <li><a class="navbar" href="project\nftsite\about.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="box">
+            <p style="text-align: center;font-size:large;padding: 10px;">
+                ! WELCOME . HERE YOU CAN BUY NFT OF YOUR CHOICE !
+            </p>
+
+           
+            <head>
+                <title>Buy NFT Form</title>
+            </head>
+            <body>
+                <h1>Buy NFT</h1>
+                <div style="width: 100%;">
+                    <div style="width:33%; float: left;">
+                        <p class="box1">STEP 1. INPUT NFT NAME</p>
+                        <input type="text" id="nftName" placeholder="Enter NFT Name" required><br><br>
+                        <button id="loadDataButton">Load NFT Data</button>
+                    </div>
+            
+                    <div style="width:33%; float: left;">
+                        <p class="box1">STEP 2. FILL NFT DETAILS</p>
+                        <!-- Display NFT details here after clicking "Load NFT Data" -->
+                    </div>
+            
+                    <div style="width:33%; float: left;">
+                        <p class="box1">STEP 3. BUY NFT</p>
+                        <input type="number" id="price" placeholder="Enter Price (ETH)" required><br><br>
+                        <button id="buyButton">Buy</button>
+                    </div>
+                </div>
+            
+                <div id="notification" style="display: none; background-color: #4CAF50; color: white; text-align: center; padding: 10px; margin-top: 10px;">NFT purchased successfully!</div>
+            
+                <script>
+                    // Function to load NFT data (replace with actual data retrieval)
+                    function loadNFTData(nftName) {
+                        // Replace this with code to retrieve NFT data based on the provided name
+                        // You can use AJAX or fetch to get data from a server
+                        // For the sake of this example, let's assume you have retrieved NFT data
+                        const nftData = {
+                            // NFT data properties (e.g., name, artist, etc.)
+                        };
+                        return nftData;
+                    }
+            
+                    document.getElementById('loadDataButton').addEventListener('click', function() {
+                        const nftName = document.getElementById('nftName').value;
+                        // Load NFT data and display it in the "STEP 2" section (replace with actual data)
+                        const nftData = loadNFTData(nftName);
+                        // Display the NFT data (replace with actual data properties)
+                        const step2Content = document.querySelector('div[style*="width:33%; float: left;"]:nth-child(2)');
+                        step2Content.innerHTML = `
+                            <p class="box1">STEP 2. NFT DETAILS</p>
+                            <p>Name: ${nftData.name}</p>
+                            <p>Artist: ${nftData.artist}</p>
+                            <p>Description: ${nftData.description}</p>
+                        `;
+                    });
+            
+                    document.getElementById('buyButton').addEventListener('click', function() {
+                        // You can add logic here to process the purchase and show the notification
+                        // For this example, we'll simply show a success message after clicking "Buy"
+                        const notification = document.getElementById('notification');
+                        notification.style.display = 'block';
+                        setTimeout(function() {
+                            notification.style.display = 'none';
+                        }, 3000); // 3000 milliseconds (3 seconds) for the notification
+                    });
+                </script>
+            
+            
+    </main>
+</body>
+
+</html>

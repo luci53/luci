@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Selling website</title>
+    <link rel="stylesheet" href=C:\Users\Hp\project\nftsite\main.css>
+    
+</head>
+
+<body>
+    <header>
+        <a href="C:\Users\Hp\project\nftsite\main.html" id="logo">NFT<span>.DEALERS</span></a>
+        <nav>
+            <ul>
+                <li><a class="navbar" href="project\nftsite\index.html">Home</a></li>
+                <li><a class="navbar" href="project\nftsite\signup.html">Sign up!</a></li>
+                <li><a class="navbar" href="project\nftsite\buy.html">Buy</a></li>
+                <li><a class="navbar" href="project\nftsite\sell.html">Sell</a></li>
+                <li><a class="navbar" href="project\nftsite\about.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="box">
+            <p style="text-align: center;font-size:large;padding: 10px;">
+                Onto The Next Step 
+            </p>
+
+           
+
+
+            <div style="width:33%;height:initial;float: left">
+                <p class="box1">STEP 2. FILL BASIC DETAILS ABOUT YOUR NFT</p>
+
+              
+            </div><br>
+            <br>
+            <br>
+            <br>
+           <!--<h1>NFT Sale Form</h1>-->
+   <!-- <form id="nftSaleForm">
+        <label for="nftName">Name of NFT:</label>
+        <input type="text" id="nftName" name="nftName" required><br><br>
+
+        <label for="price">Price (in ETH):</label>
+        <input type="number" id="price" name="price" step="0.01" required><br><br>
+
+        <label for="daysToSell">Days Until Sold:</label>
+        <input type="number" id="daysToSell" name="daysToSell" required><br><br>-->
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>NFT Sale Form</title>
+        </head>
+        <body>
+            <h1>NFT Sale Form</h1>
+            <form id="nftSaleForm">
+                <label for="nftName">Name of NFT:</label>
+                <input type="text" id="nftName" name="nftName" required><br><br>
+        
+                <label for="price">Price (in ETH):</label>
+                <input type="number" id="price" name="price" step="0.01" required><br><br>
+        
+                <label for="daysToSell">Days Until Sold:</label>
+                <input type="number" id="daysToSell" name="daysToSell" required><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+            
+            <div id="notification" style="display: none; background-color: #4CAF50; color: white; text-align: center; padding: 10px; margin-top: 10px;">Form submitted successfully. You will be redirected to the home page.</div>
+        
+            <script>
+                document.getElementById('nftSaleForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+        
+                    // Get the form values
+                    const nftName = document.getElementById('nftName').value;
+                    const price = document.getElementById('price').value;
+                    const daysToSell = document.getElementById('daysToSell').value;
+        
+                    // Display a notification message
+                    const notification = document.getElementById('notification');
+                    notification.style.display = 'block';
+        
+                    // Redirect to the home page after a delay (e.g., 3 seconds)
+                    setTimeout(function() {
+                        window.location.href = 'home.html'; // Change 'home.html' to your actual home page URL
+                    }, 3000); // 3000 milliseconds (3 seconds)
+                });
+            </script>
+        </body>
+        </html>
+        
+</body>
+
+</html>

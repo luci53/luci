@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Selling website</title>
+    <link rel="stylesheet" href=C:\Users\Hp\project\nftsite\main.css>
+    
+</head>
+
+<body>
+    <header>
+        <a href="C:\Users\Hp\project\nftsite\main.html" id="logo">NFT<span>.DEALERS</span></a>
+        <nav>
+            <ul>
+                <li><a class="navbar" href="project\nftsite\index.html">Home</a></li>
+                <li><a class="navbar" href="project\nftsite\signup.html">Sign up!</a></li>
+                <li><a class="navbar" href="project\nftsite\buy.html">Buy</a></li>
+                <li><a class="navbar" href="project\nftsite\sell.html">Sell</a></li>
+                <li><a class="navbar" href="project\nftsite\about.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="box">
+            <p style="text-align: center;font-size:large;padding: 10px;">
+                ! FOLLOW THESE 3 EASY STEPS TO SELL YOUR NFT WITHOUT ANY HUSTLE !
+            </p>
+
+            <div style="width:33%;float: left;">
+                <p class="box1">STEP 1. UPLOAD YOUR IMAGE</p>
+                <input type="file" id="file"/>
+                <label for="file" style="height: 100px;">Upload Image</label><br>
+                <br>
+                <br>
+                <br>
+                <button id="openTabButton">NEXT STEP</button>
+
+                <script>
+                    document.getElementById('openTabButton').addEventListener('click', function() {
+                        window.location.href = 'sell2.html';
+                    });
+                </script>
+            </div>
+
+
+            <div style="width:33%;height:initial;float: left">
+                <p class="box1">STEP 2. FILL BASIC DETAILS ABOUT YOUR NFT</p>
+            </div>
+            
+            <div style="width:33%;height:initial;float: left">
+                <p class="box1">STEP 3. CHOOSE A DESIRED AMOUNT TO SELL</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
