@@ -119,7 +119,7 @@ li {
 /* Additional styles for .box1 can be added here if needed */
 
 /* INPUT STYLES (Uncomment these styles if needed) */
-/*
+
 input {
     display: none;
 }
@@ -134,10 +134,10 @@ label:hover {
     color: #de0611;
     border: 1px dashed #de0611;
 }
-*/
+
 
 /* TESTIMONIAL STYLES (Uncomment these styles if needed) */
-/*
+
 .testimonial {
     width: 30%;
     height: 60vh;
@@ -146,10 +146,10 @@ label:hover {
     float: left;
     margin: 15px 25px 10px 25px;
 }
-*/
+
 
 /* LOGIN FORM STYLES (Uncomment these styles if needed) */
-/*
+
 body {
     background-color: #333;
     display: flex;
@@ -215,4 +215,4 @@ input[type="submit"] {
 .loginForm:hover {
     outline: 10px solid #ffff00;
 }
-*/
+
