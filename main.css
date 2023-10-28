@@ -134,7 +134,7 @@ li {
     border: 2px dashed #999;
     height: 25px;
 }
-<<<<<<< HEAD
+
 
 label:hover {
     color: #de0611;
@@ -152,7 +152,7 @@ label:hover {
     margin: 15px 25px 10px 25px;
 }
 
-=======
+
 label:hover{
     color:#de0611;
     border:1px dashed #de0611;
@@ -226,4 +226,4 @@ input[type="submit"] {
 .loginForm:hover{
     outline: 10px solid #ffff00;
 }
->>>>>>> 95673a849dec8d98f8ce932022a92197a334f76f
+
